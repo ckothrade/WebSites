@@ -4,6 +4,180 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style type="text/css">
+
+        *,
+        *::before,
+        *::after{
+            box-sizing: border-box;
+        }
+
+        *:focus{
+            outline: none;
+        }
+
+        body{
+            padding: 0;
+            margin: 0;
+            background: #000;
+            color: white;
+            font-family: "Oxygen", sans-serif;
+            /*overflow-y: hidden;*/
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        img{
+            width: 70%;
+        }
+      
+        .home img{
+            width: 70%;
+            -webkit-filter: grayscale(100%) contrast(100%);
+            filter: grayscale(100%) contrast(200%) brightness(60%);
+        }
+
+        .folio img{
+            filter: grayscale(100%);
+        }
+
+        aside{
+            position: fixed;
+            background: #222;
+            top: 0px;
+            left: 0px;
+            width: 120px;
+            height: 100%;
+            overflow: none;
+            z-index: 1;
+            text-align: center;
+            padding: 0;
+        }
+
+        aside img{
+            filter: grayscale(100%) contrast(50%) brightness(100%);
+            margin-bottom: -3px;
+
+        }
+
+        .material-icons.md-36{
+            font-size: 36px;
+
+        }
+
+        aside a{
+            display: block;
+            padding: 15px 0;
+            color: white;
+            transition: all 0.35s;
+            text-transform: uppercase;
+            font-size: 0.75em;
+            letter-spacing: 2px;
+        }
+
+        aside p{
+            margin: 0;
+            padding: 0;
+        }
+
+        aside a:hover{
+            background: #000;
+
+        }
+
+        aside nav a:nth-child(2){
+            background: #000;
+        }
+
+        aside nav a:nth-child(2):hover{
+            background: #b2b2b2;
+            color: #222;
+        }
+        main{
+            max-width: 980px;
+            background: #000;
+            margin-left: 12px 50px 12px 50px;
+        }
+
+        header{
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        header h1{
+            font-weight: bold;
+            font-size: 4em;
+            letter-spacing: 4px;
+        }
+
+        header h5{
+            font-weight: 300;
+            font-size: 1em;
+            letter-spacing: 4px;
+            color: #b2b2b2;
+        }
+
+        .about, 
+        .folio,
+        .contact{
+            line-height: 1.5em;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+
+        .about h2, 
+        .folio h2,
+        .contact h2{
+            line-height: 1.5em;
+            text-transform: uppercase;
+            text-decoration: line-through;
+            padding-bottom: 10px;
+            margin: 100px 0 0 0 ;
+            letter-spacing: 4px;
+        }
+
+        .about p{
+            color: #b2b2b2;
+        }
+
+        .about span{
+            font-weight: 600;
+            color: white;
+        }
+
+        .about h3{
+            font-weight: 300;
+            margin: 50px 0;
+        }
+
+        .container{
+            width: 100%;
+            background-color: #b2b2b2;
+        }
+
+        .skills{
+            text-align: right;
+            padding-right: 20px;
+            line-height: 30px;
+            color: white;
+            background-color: #424242;
+        }
+        .java{
+            width: 95%;
+
+        }
+
+        .c{
+            width: 80%;
+        }
+
+        .python{
+            width: 10%;
+        }
+        
+    </style>
 </head>
 <body>
 
@@ -67,6 +241,67 @@
             <div class="skills python">0%</div>
         </div>
     </section>
+
+    <section class="folio" id="folio">
+        <h2>Folio</h2>
+        <div class="class-halves">
+            <div class="col">
+                <img src="tempPersonSmall.jpg" alt="">
+                <h3>Business</h3>
+                <p>
+                    Building a following of youtbe subscribers and aspiring developers.
+                </p>
+            </div>
+            <div class="col">
+                <img src="tempPersonSmall.jpg" alt="">
+                <h3>Mobile</h3>
+                <p>
+                    Building android apps
+                </p>
+            </div>
+        </div>
+
+        <div class="class-halves">
+            <div class="col">
+                <img src="tempPersonSmall.jpg" alt="">
+                <h3>WebbApps</h3>
+                <p>
+                    Building n-tier web applications
+                </p>
+            </div>
+            <div class="col">
+                <img src="tempPersonSmall.jpg" alt="">
+                <h3>Machine Learning</h3>
+                <p>
+                    Creating Nueral Networks using Deep Learning techniques
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="email">E-mail</label>
+            <input type="text" id="email">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" style="height:200px"></textarea>
+            <input type="submit" value="message">
+        </form>
+    </section>
+
+    <footer>
+        <section class="top-bar">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+        </section>
+        <section class="bottum-bar">
+            <p>&copy 2019 | All rights reserved</p>
+        </section>
+    </footer>
     
 
 </body>
