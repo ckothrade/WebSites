@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Design</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Federo&family=Judson&family=Noticia+Text:ital@1&family=Noto+Sans+KR:wght@300;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/scripts.js"></script>
+  </head>
+  <body onload= "init('Milwaukee')">
+    <main>
+      <section class="window">
+        <div class="dashboard">
+          <div class="user" id="user">
+          </div>
+          <div class="links">
+            <div class="link">
+              <h3><a href="#" onclick="init('Milwaukee')">MILWAUKEE</a></h3>
+            </div>
+            <div class="link">
+              <h3><a href="#" onclick="init('Seattle')">SEATTLE</a></h3>
+            </div>
+            <div class="link">
+              <h3><a href="#" onclick="init('Houston')">HOUSTON</a></h3>
+            </div>
+            <div class="link">
+              <h3><a href="#" onclick="init('Miami')">MIAMI</a></h3>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="img/projectplaceholder.png" height="70%" width="50%" alt="">
+            <h2>Logo Here</h2>
+          </div>
+        </div>
+        <div class="data">
+          <div class="banner">
+            <div class="locale">
+              <h1 class="city" id="city"></h1>
+              <h3 class="state" id="state"></h3>
+            </div>
+            <div class="refresh">
+              <button class="btn" onclick="refresh()"><img src="img/blue-refresh-icon-29.jpg"></button>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="cards">
+              <div class="card">
+                <div class="card-info">
+                  <h3 class="label">TEMP(C)</h3>
+                  <h1 class="value" id="temp"></h1>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-info">
+                  <h3 class="label">PRECIP</h3>
+                  <h1 class="value" id="precip"></h1>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-info">
+                  <h3 class="label">WIND DIR</h3>
+                  <h1 class="cardinal" id="cardinal"></h1>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="card-info">
+                  <h3 class="label">TIME (hrs)</h3>
+                  <h1 class="value" id="time"></h1>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-info">
+                  <h3 class="label">HUMIDITY</h3>
+                  <h1 class="value" id="hum"></h1>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-info">
+                  <h3 class="label">WS (kmh)</h3>
+                  <h1 class="value" id="ws"></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="circle1"><img src="img/clouds2.png" alt="clouds2"></div>
+    <div class="circle2"><img src="img/clouds1.png" alt="clouds1"></div>
+  </body>
+</html>

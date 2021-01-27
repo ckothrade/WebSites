@@ -1,0 +1,14 @@
+Directions:
+- Download file
+- Extract files from zip
+- Open index.html in browser (internet conection needed)
+
+
+ToDo:
+- make site responsive (screen size)
+- cleanup css file
+
+
+
+
+
